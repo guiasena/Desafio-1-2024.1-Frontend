@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css');
+
+:root {
+    --sombrinha: rgba(48, 43, 43, 0.75);
+    --black: #000;
+    --white: #fff;
+    --silver: #ccc;
+    --github: #5a32a3;
+    --gmail: #A52A2A;
+    --linkedin: #0073a4;
+}
+
+* {
+    box-sizing: border-box;
+    outline: 0;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(../img/wallpaper2.png);
+    background-size: cover;
+    background-position: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    line-height: 1.5em;
+}
+
+.container {
+    position: relative;
+    max-width: 600px;
+    margin: 140px auto;
+    background: var(--white);
+    padding: 40px 20px 20px;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0px 0px 20px 0px var(--sombrinha);
+}
+
+/* PARTE RELACIONA À FOTO */
+.photo {
+    height: 120px;
+    position: relative;
+}
+
+.photo div {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -75%);
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 4px outset white;
+    background-image: url("../img/araujo.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+/* PARTE RELACIONADA À LINKS */
+.lin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.lin ul {
+    list-style: none;
+    padding: 0;
+}
+
+.lin li {
+    vertical-align: top;
+    display: inline;
+}
+
+.lin a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+.fa-linkedin-in {
+    padding: 0 10px;
+    font-size: 20px;
+    transition: .5s;
+}
+
+.fa-linkedin-in:hover {
+    background-color: var(--linkedin);
+}
+
+.fa-envelope {
+    padding: 0 10px;
+    font-size: 20px;
+    transition: .5s;
+}
+.fa-envelope:hover {
+    background-color: var(--gmail);
+}
+
+.fa-github {
+    padding: 0 10px;
+    font-size: 20px;
+    transition: .5s;
+}
+
+.fa-github:hover {
+    background-color: var(--github);
+}
+
+.pro {
+  text-align: left;
+  margin-top: 25px;
+}
+
+.pro table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+.pro th, .pro td {
+  border: 1px solid var(--silver);
+  padding: 8px 12px;
+  text-align: left;
+}
+
+.pro th {
+  background-color: var(--white);
+}
+
+.pro a {
+  color: var(--blue);
+  text-decoration: none;
+}
+
+.pro a:hover {
+  text-decoration: underline;
+}
